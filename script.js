@@ -1,4 +1,4 @@
-let table =  [12, 67, 34, 23.01, 24, 2, 56, 8, 0x10, 23.02, 78, 34, 1e2, 45, 67, 98, 1];
+let table = [12, 67, 34, 23.01, 24, 2, 56, 8, 0x10, 23.02, 78, 34, 1e2, 45, 67, 98, 1];
 
 function sorting(x) {
   if (x.length < 2) {
@@ -19,7 +19,7 @@ function sorting(x) {
     }
   }
   return sorting(smallestElements).concat(pivot, sorting(biggerElements));
-console.log(pivot);
- }
+  console.log(pivot);
+}
 
 console.log(sorting(table));
